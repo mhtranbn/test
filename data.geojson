@@ -1,0 +1,290 @@
+{
+    "status_code":200,
+    "message":{  },
+    "data":[
+            {
+            "type":"restaurant",
+            "name":"KFC",
+            "address":"Berlin, Germany",
+            "phone":"0987654321",
+            "website":"luongson.com.vn",
+            "description":"Ngon Bổ Rẻ",
+            "avatar":{  },
+            "cover":{  },
+            "colors":{  },
+            "status":"enabled",
+            "autoPolicy":true,
+            "currency":"sgd",
+            "openTime":"08:00 AM",
+            "closeTime":"10:00 PM",
+            "location":{
+            "lng":105.1816553217483,
+            "lat":21.1909262343856
+            },
+            "user_id":"586b53dd2a82601231cc667c",
+            "hasBank":true,
+            "id":"586b60432a82601231cc668d",
+            "isDeleted":false,
+            "created_at":"2017-01-03T08:26:42.998Z",
+            "updated_at":"2017-01-03T09:47:50.759Z"
+            },
+            {
+            "type":"restaurant",
+            "name":"huyvuong",
+            "address":"Paris, Pháp",
+            "phone":"88888",
+            "website":"@huy",
+            "description":"sas",
+            "avatar":{
+            "origin":"/containers/586b66a12a82601231cc6696/download/7fd15f20-d260-11e6-a4fc-556f052da002.jpg",
+            "medium":"/containers/586b66a12a82601231cc6696/download/7fd15f20-d260-11e6-a4fc-556f052da002-medium.jpg",
+            "small":"/containers/586b66a12a82601231cc6696/download/7fd15f20-d260-11e6-a4fc-556f052da002-small.jpg"
+            },
+            "cover":{
+            "origin":"/containers/586b66a12a82601231cc6696/download/7fd18630-d260-11e6-a4fc-556f052da002.jpg",
+            "medium":"/containers/586b66a12a82601231cc6696/download/7fd18630-d260-11e6-a4fc-556f052da002-medium.jpg"
+            },
+            "colors":{
+            "primary":"#0086FF",
+            "background":"#fff"
+            },
+            "status":"enabled",
+            "autoPolicy":false,
+            "currency":"aud",
+            "openTime":"15:49",
+            "closeTime":"0:00 AM",
+            "location":{
+            "lng":105.3816553217483,
+            "lat":21.3909262343856
+            },
+            "user_id":"586b51522a82601231cc6674",
+            "hasBank":false,
+            "id":"586b66a12a82601231cc6696",
+            "isDeleted":false,
+            "created_at":"2017-01-03T08:53:53.637Z",
+            "updated_at":"2017-01-04T09:30:58.602Z"
+            },
+            {
+            "type":"restaurant",
+            "name":"USA",
+            "address":"United States",
+            "phone":"124556677",
+            "website":"",
+            "description":null,
+            "avatar":{
+            "origin":"/containers/default/download/noimage.png",
+            "medium":"/containers/default/download/noimage.png",
+            "small":"/containers/default/download/noimage.png"
+            },
+            "cover":{
+            "origin":"/containers/default/download/noimage.png",
+            "medium":"/containers/default/download/noimage.png"
+            },
+            "colors":{
+            "key":2,
+            "primary":"#2940AF",
+            "background":"#FFFFFF",
+            "text":"#000000",
+            "isActive":false
+            },
+            "status":"enabled",
+            "autoPolicy":true,
+            "currency":"usd",
+            "openTime":"08:00 AM",
+            "closeTime":"10:00 PM",
+            "location":{
+            "lng":101.3816553217483,
+            "lat":21.1909262343856
+            },
+            "user_id":"586b53dd2a82601231cc667c",
+            "hasBank":true,
+            "id":"586b8251a5cead594274baac",
+            "isDeleted":false,
+            "created_at":"2017-01-03T10:52:01.336Z",
+            "updated_at":"2017-01-03T10:55:50.774Z"
+            },
+            {
+            "type":"restaurant",
+            "name":"BBQ lẩu quán sứ",
+            "address":"Ngõ Huyện 8, Hanoi, Thành Phố Hà Nội, Vietnam",
+            "phone":"0984230489",
+            "website":"www.hoangmanhtran.com",
+            "description":"Good restaurant.",
+            "avatar":{
+            "origin":"/containers/586b8b4c93334978c0da02af/download/02c5b0c0-d1a8-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b8b4c93334978c0da02af/download/02c5b0c0-d1a8-11e6-ab82-4bf5f08b281f-medium.jpg",
+            "small":"/containers/586b8b4c93334978c0da02af/download/02c5b0c0-d1a8-11e6-ab82-4bf5f08b281f-small.jpg"
+            },
+            "cover":{
+            "origin":"/containers/586b8b4c93334978c0da02af/download/02c625f0-d1a8-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b8b4c93334978c0da02af/download/02c625f0-d1a8-11e6-ab82-4bf5f08b281f-medium.jpg"
+            },
+            "colors":{
+            "background":"#FFF",
+            "primary":"#1241AE"
+            },
+            "status":"enabled",
+            "autoPolicy":true,
+            "currency":"usd",
+            "openTime":"6:27 PM",
+            "closeTime":"0:00 AM",
+            "location":{
+            "lng":105.3816553217483,
+            "lat":21.4909262343856
+            },
+            "user_id":"586b8306a5cead594274baad",
+            "hasBank":false,
+            "id":"586b8b4c93334978c0da02af",
+            "isDeleted":false,
+            "created_at":"2017-01-03T11:30:20.645Z",
+            "updated_at":"2017-01-03T11:30:21.395Z"
+            },
+            {
+            "type":"restaurant",
+            "name":"bbq quan su",
+            "address":"Hanoi, Vietnam",
+            "phone":"0984230489",
+            "website":"www.hoangmanhtran.com",
+            "description":"quan ngon",
+            "avatar":{
+            "origin":"/containers/586b8e0893334978c0da02b2/download/a3a5a940-d1a9-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b8e0893334978c0da02b2/download/a3a5a940-d1a9-11e6-ab82-4bf5f08b281f-medium.jpg",
+            "small":"/containers/586b8e0893334978c0da02b2/download/a3a5a940-d1a9-11e6-ab82-4bf5f08b281f-small.jpg"
+            },
+            "cover":{
+            "origin":"/containers/586b8e0893334978c0da02b2/download/a3a61e70-d1a9-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b8e0893334978c0da02b2/download/a3a61e70-d1a9-11e6-ab82-4bf5f08b281f-medium.jpg"
+            },
+            "colors":{
+            "background":"#FFF",
+            "primary":"#1241AE"
+            },
+            "status":"enabled",
+            "autoPolicy":true,
+            "currency":"usd",
+            "openTime":"6:40 PM",
+            "closeTime":"0:00 AM",
+            "location":{
+            "lng":105.8816553217483,
+            "lat":21.409262343856
+            },
+            "user_id":"586b8d3f93334978c0da02b0",
+            "hasBank":false,
+            "id":"586b8e0893334978c0da02b2",
+            "isDeleted":false,
+            "created_at":"2017-01-03T11:42:00.285Z",
+            "updated_at":"2017-01-03T11:42:00.784Z"
+            },
+            {
+            "type":"cafe",
+            "name":"bbq quan su",
+            "address":"Hanoi, Vietnam",
+            "phone":"0984230489",
+            "website":"www.hoangmanhtran.com",
+            "description":"",
+            "avatar":{
+            "origin":"/containers/586b900593334978c0da02b5/download/d30f2750-d1aa-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b900593334978c0da02b5/download/d30f2750-d1aa-11e6-ab82-4bf5f08b281f-medium.jpg",
+            "small":"/containers/586b900593334978c0da02b5/download/d30f2750-d1aa-11e6-ab82-4bf5f08b281f-small.jpg"
+            },
+            "cover":{
+            "origin":"/containers/586b900593334978c0da02b5/download/d30f7570-d1aa-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b900593334978c0da02b5/download/d30f7570-d1aa-11e6-ab82-4bf5f08b281f-medium.jpg"
+            },
+            "colors":{
+            "background":"#FFF",
+            "primary":"#1241AE"
+            },
+            "status":"enabled",
+            "autoPolicy":true,
+            "currency":"usd",
+            "openTime":"6:48 PM",
+            "closeTime":"0:00 AM",
+            "location":{
+            "lng":105.7816553217483,
+            "lat":21.1909262343856
+            },
+            "user_id":"586b8f5b93334978c0da02b3",
+            "hasBank":false,
+            "id":"586b900593334978c0da02b5",
+            "isDeleted":false,
+            "created_at":"2017-01-03T11:50:29.298Z",
+            "updated_at":"2017-01-03T11:50:29.733Z"
+            },
+            {
+            "type":"bar",
+            "name":"bbq",
+            "address":"Hanoi, Vietnam",
+            "phone":"0984230489",
+            "website":"",
+            "description":"good bbq",
+            "avatar":{
+            "origin":"/containers/586b913b93334978c0da02b8/download/8beda940-d1ab-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b913b93334978c0da02b8/download/8beda940-d1ab-11e6-ab82-4bf5f08b281f-medium.jpg",
+            "small":"/containers/586b913b93334978c0da02b8/download/8beda940-d1ab-11e6-ab82-4bf5f08b281f-small.jpg"
+            },
+            "cover":{
+            "origin":"/containers/586b913b93334978c0da02b8/download/8bedd050-d1ab-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586b913b93334978c0da02b8/download/8bedd050-d1ab-11e6-ab82-4bf5f08b281f-medium.jpg"
+            },
+            "colors":{
+            "background":"#FFF",
+            "primary":"#1241AE"
+            },
+            "status":"enabled",
+            "autoPolicy":true,
+            "currency":"usd",
+            "openTime":"6:54 PM",
+            "closeTime":"0:00 AM",
+            "location":{
+            "lng":106.6816553217483,
+            "lat":21.1909262343856
+            },
+            "user_id":"586b90c493334978c0da02b6",
+            "hasBank":false,
+            "id":"586b913b93334978c0da02b8",
+            "isDeleted":false,
+            "created_at":"2017-01-03T11:55:39.508Z",
+            "updated_at":"2017-01-03T11:55:40.004Z"
+            },
+            {
+            "type":"restaurant",
+            "name":"De nhat nuong",
+            "address":"Xã Vật Lại, Hà Nội, Thành Phố Hà Nội, Việt Nam",
+            "phone":"9999999999",
+            "website":"@huy",
+            "description":"phong cach thuc phan han quoc., nuong than kjong khoi, giam gia 40% chuc mung nam moi",
+            "avatar":{
+            "origin":"/containers/586c756d93334978c0da02db/download/d6e6e500-d233-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586c756d93334978c0da02db/download/d6e6e500-d233-11e6-ab82-4bf5f08b281f-medium.jpg",
+            "small":"/containers/586c756d93334978c0da02db/download/d6e6e500-d233-11e6-ab82-4bf5f08b281f-small.jpg"
+            },
+            "cover":{
+            "origin":"/containers/586c756d93334978c0da02db/download/d6e6e501-d233-11e6-ab82-4bf5f08b281f.jpg",
+            "medium":"/containers/586c756d93334978c0da02db/download/d6e6e501-d233-11e6-ab82-4bf5f08b281f-medium.jpg"
+            },
+            "colors":{
+            "primary":"#009753",
+            "background":"#fff"
+            },
+            "status":"enabled",
+            "autoPolicy":true,
+            "currency":"aud",
+            "openTime":"11:06",
+            "closeTime":"0:00 AM",
+            "location":{  
+            "lng":105.3816553217483,
+            "lat":21.1909262343856
+            },
+            "user_id":"586b51522a82601231cc6674",
+            "hasBank":false,
+            "id":"586c756d93334978c0da02db",
+            "isDeleted":false,
+            "created_at":"2017-01-04T04:09:17.141Z",
+            "updated_at":"2017-01-04T04:11:17.234Z"
+            }
+            ],
+    "meta":{  
+        "total":8
+    }
+}
