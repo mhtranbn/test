@@ -14,6 +14,7 @@
 		329A2E8F1E07FBBD00C32115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A2E8D1E07FBBD00C32115 /* Main.storyboard */; };
 		329A2E911E07FBBD00C32115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329A2E901E07FBBD00C32115 /* Assets.xcassets */; };
 		329A2E941E07FBBD00C32115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A2E921E07FBBD00C32115 /* LaunchScreen.storyboard */; };
+		4DB1108188CFB41710807CA4 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9676168F415D760E735C48C6 /* Pods_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		329A2E901E07FBBD00C32115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329A2E931E07FBBD00C32115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		329A2E951E07FBBD00C32115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EA80E7988211FE8A5776687 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
+		94474540F3D95B28DBA47AFF /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
+		9676168F415D760E735C48C6 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB1108188CFB41710807CA4 /* Pods_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				329A2E881E07FBBD00C32115 /* test */,
 				329A2E871E07FBBD00C32115 /* Products */,
+				E0788C444D85763D997FE67E /* Pods */,
+				E929A48BD9C4A406DCF33C2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		E0788C444D85763D997FE67E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA80E7988211FE8A5776687 /* Pods-test.debug.xcconfig */,
+				94474540F3D95B28DBA47AFF /* Pods-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E929A48BD9C4A406DCF33C2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9676168F415D760E735C48C6 /* Pods_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 329A2E981E07FBBD00C32115 /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
+				672820982C87E764BEC0D474 /* [CP] Check Pods Manifest.lock */,
 				329A2E821E07FBBD00C32115 /* Sources */,
 				329A2E831E07FBBD00C32115 /* Frameworks */,
 				329A2E841E07FBBD00C32115 /* Resources */,
+				60B354231FED20619DB1C313 /* [CP] Embed Pods Frameworks */,
+				F6BE4BB0CFB0FAB3E76637CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60B354231FED20619DB1C313 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		672820982C87E764BEC0D474 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6BE4BB0CFB0FAB3E76637CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		329A2E821E07FBBD00C32115 /* Sources */ = {
@@ -267,6 +342,7 @@
 		};
 		329A2E991E07FBBD00C32115 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA80E7988211FE8A5776687 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9SP5CGKG3;
@@ -280,6 +356,7 @@
 		};
 		329A2E9A1E07FBBD00C32115 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94474540F3D95B28DBA47AFF /* Pods-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M9SP5CGKG3;
