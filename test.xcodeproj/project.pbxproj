@@ -14,6 +14,9 @@
 		329A2E8F1E07FBBD00C32115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A2E8D1E07FBBD00C32115 /* Main.storyboard */; };
 		329A2E911E07FBBD00C32115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329A2E901E07FBBD00C32115 /* Assets.xcassets */; };
 		329A2E941E07FBBD00C32115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A2E921E07FBBD00C32115 /* LaunchScreen.storyboard */; };
+		32D4F0491E28B79A0056BC9E /* RSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D4F0481E28B79A0056BC9E /* RSlideView.m */; };
+		32D4F0511E28BF410056BC9E /* HeaderProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4F04F1E28BF410056BC9E /* HeaderProfileCell.swift */; };
+		32D4F0521E28BF410056BC9E /* HeaderProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D4F0501E28BF410056BC9E /* HeaderProfileCell.xib */; };
 		4DB1108188CFB41710807CA4 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9676168F415D760E735C48C6 /* Pods_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,11 @@
 		329A2E901E07FBBD00C32115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329A2E931E07FBBD00C32115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		329A2E951E07FBBD00C32115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D4F0451E28B72B0056BC9E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		32D4F0471E28B79A0056BC9E /* RSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSlideView.h; sourceTree = "<group>"; };
+		32D4F0481E28B79A0056BC9E /* RSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSlideView.m; sourceTree = "<group>"; };
+		32D4F04F1E28BF410056BC9E /* HeaderProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderProfileCell.swift; path = test/HeaderProfileCell.swift; sourceTree = SOURCE_ROOT; };
+		32D4F0501E28BF410056BC9E /* HeaderProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderProfileCell.xib; path = test/HeaderProfileCell.xib; sourceTree = SOURCE_ROOT; };
 		8EA80E7988211FE8A5776687 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		94474540F3D95B28DBA47AFF /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		9676168F415D760E735C48C6 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +73,7 @@
 		329A2E881E07FBBD00C32115 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				32D4F0461E28B79A0056BC9E /* RSlideView */,
 				326FD6541E1DFECF00FC54D8 /* SwiftyJSON.swift */,
 				329A2E891E07FBBD00C32115 /* AppDelegate.swift */,
 				329A2E8B1E07FBBD00C32115 /* ViewController.swift */,
@@ -73,8 +82,20 @@
 				329A2E921E07FBBD00C32115 /* LaunchScreen.storyboard */,
 				329A2E951E07FBBD00C32115 /* Info.plist */,
 				326FD6561E1E005A00FC54D8 /* data.json */,
+				32D4F0451E28B72B0056BC9E /* Header.h */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		32D4F0461E28B79A0056BC9E /* RSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				32D4F0471E28B79A0056BC9E /* RSlideView.h */,
+				32D4F0481E28B79A0056BC9E /* RSlideView.m */,
+				32D4F04F1E28BF410056BC9E /* HeaderProfileCell.swift */,
+				32D4F0501E28BF410056BC9E /* HeaderProfileCell.xib */,
+			);
+			path = RSlideView;
 			sourceTree = "<group>";
 		};
 		E0788C444D85763D997FE67E /* Pods */ = {
@@ -161,6 +182,7 @@
 				329A2E911E07FBBD00C32115 /* Assets.xcassets in Resources */,
 				329A2E8F1E07FBBD00C32115 /* Main.storyboard in Resources */,
 				326FD6571E1E005A00FC54D8 /* data.json in Resources */,
+				32D4F0521E28BF410056BC9E /* HeaderProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				326FD6551E1DFECF00FC54D8 /* SwiftyJSON.swift in Sources */,
+				32D4F0491E28B79A0056BC9E /* RSlideView.m in Sources */,
+				32D4F0511E28BF410056BC9E /* HeaderProfileCell.swift in Sources */,
 				329A2E8C1E07FBBD00C32115 /* ViewController.swift in Sources */,
 				329A2E8A1E07FBBD00C32115 /* AppDelegate.swift in Sources */,
 			);
@@ -350,6 +374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoangmanhtran.com.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/mhtran/test/test/Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -364,6 +389,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoangmanhtran.com.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/mhtran/test/test/Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

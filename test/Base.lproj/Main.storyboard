@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mDM-PK-dHQ">
+                                <rect key="frame" x="0.0" y="302.5" width="375" height="364.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yBF-gZ-aRE"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="K0j-ZQ-C9A"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYC-ba-xdX" customClass="RSlideView">
+                                <rect key="frame" x="0.0" y="80" width="375" height="222.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="loopSlide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="continuousScroll" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pageControlHidden" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="0OQ-Nh-xeD"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ia8-Yf-tmJ"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWQ-Pb-HT2">
+                                <rect key="frame" x="0.0" y="179" width="20" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="bq9-h6-xp2"/>
+                                </constraints>
+                                <state key="normal" image="ic_button_leftProfileHeader"/>
+                                <connections>
+                                    <action selector="buttonLeftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JHQ-hr-Pcn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGT-R6-0Hb">
+                                <rect key="frame" x="355" y="178" width="20" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ctu-Xw-mVz"/>
+                                </constraints>
+                                <state key="normal" image="ic_button_rightProfileHeader"/>
+                                <connections>
+                                    <action selector="buttonRightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cz4-g5-9Jh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MYC-ba-xdX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0eR-Rx-FeZ"/>
+                            <constraint firstItem="mGT-R6-0Hb" firstAttribute="trailing" secondItem="MYC-ba-xdX" secondAttribute="trailing" id="A2w-gX-5ec"/>
+                            <constraint firstAttribute="trailing" secondItem="MYC-ba-xdX" secondAttribute="trailing" id="EZE-nN-PFy"/>
+                            <constraint firstItem="MYC-ba-xdX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:3" id="Goy-St-FQV"/>
+                            <constraint firstAttribute="trailing" secondItem="mDM-PK-dHQ" secondAttribute="trailing" id="Hqf-SD-wBn"/>
+                            <constraint firstItem="mDM-PK-dHQ" firstAttribute="top" secondItem="MYC-ba-xdX" secondAttribute="bottom" id="Iea-sI-edk"/>
+                            <constraint firstItem="VWQ-Pb-HT2" firstAttribute="centerY" secondItem="MYC-ba-xdX" secondAttribute="centerY" id="LIz-Rb-dax"/>
+                            <constraint firstItem="MYC-ba-xdX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Nn8-wn-U4u"/>
+                            <constraint firstItem="mDM-PK-dHQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ajz-ja-tCE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mDM-PK-dHQ" secondAttribute="bottom" id="dVi-Ps-FXo"/>
+                            <constraint firstItem="mGT-R6-0Hb" firstAttribute="centerY" secondItem="MYC-ba-xdX" secondAttribute="centerY" id="rGA-dy-RFQ"/>
+                            <constraint firstItem="VWQ-Pb-HT2" firstAttribute="leading" secondItem="MYC-ba-xdX" secondAttribute="leading" id="ypj-Ix-uGb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rSlideView" destination="MYC-ba-xdX" id="ZzF-G9-xe1"/>
+                        <outlet property="tableView" destination="mDM-PK-dHQ" id="D6D-JQ-j5T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="106.59670164917542"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_button_leftProfileHeader" width="8" height="25"/>
+        <image name="ic_button_rightProfileHeader" width="9" height="27"/>
+    </resources>
 </document>
