@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InforMationCell" rowHeight="187" id="KGk-i7-Jjw" customClass="InforMationCell" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TCC,FSU, &amp; CoderSchool Alumni" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFg-7n-4bE">
+                        <rect key="frame" x="28" y="0.0" width="304" height="187"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mFg-7n-4bE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="NAP-ii-J3A"/>
+                    <constraint firstAttribute="trailing" secondItem="mFg-7n-4bE" secondAttribute="trailing" id="YkL-7C-xJO"/>
+                    <constraint firstAttribute="bottom" secondItem="mFg-7n-4bE" secondAttribute="bottom" id="uxa-84-lur"/>
+                    <constraint firstItem="mFg-7n-4bE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zFf-fD-s12"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textView" destination="mFg-7n-4bE" id="Jdo-3d-I8N"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="130.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailProfileCell" rowHeight="128" id="KGk-i7-Jjw" customClass="DetailProfileCell" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_advertising-agency-account-executive" translatesAutoresizingMaskIntoConstraints="NO" id="Fwa-An-UO7">
+                        <rect key="frame" x="10" y="10" width="30" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="H5c-MM-GCZ"/>
+                            <constraint firstAttribute="width" secondItem="Fwa-An-UO7" secondAttribute="height" multiplier="29:26" id="h6y-Px-V2z"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_idea" translatesAutoresizingMaskIntoConstraints="NO" id="cde-Sf-PNm">
+                        <rect key="frame" x="10" y="93" width="30" height="27"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margot Robbie, 29 O.F.A lounge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKX-AR-yOc">
+                        <rect key="frame" x="50" y="15" width="214" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Studied @ www.codeschool.vn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SI3-lM-hCI">
+                        <rect key="frame" x="50" y="56" width="199" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art &amp; Craft @ www.phi.vn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFq-ng-Mgv">
+                        <rect key="frame" x="50" y="98" width="164" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1f-u7-S8M">
+                        <rect key="frame" x="280" y="39" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.2235008180141449" green="0.22354590892791748" blue="0.22349801659584045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="47N-F7-vj1"/>
+                            <constraint firstAttribute="width" secondItem="o1f-u7-S8M" secondAttribute="height" multiplier="1:1" id="62X-DA-Vj8"/>
+                        </constraints>
+                        <state key="normal" image="ic_speech-bubble"/>
+                        <connections>
+                            <action selector="buttonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WdW-mZ-PaC"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_open-book" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-rC-eqm">
+                        <rect key="frame" x="10" y="51" width="30" height="27"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fwa-An-UO7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1Aq-S5-bry"/>
+                    <constraint firstItem="rKX-AR-yOc" firstAttribute="top" secondItem="Fwa-An-UO7" secondAttribute="top" constant="5" id="1d6-cs-3qW"/>
+                    <constraint firstItem="EFq-ng-Mgv" firstAttribute="top" secondItem="cde-Sf-PNm" secondAttribute="top" constant="5" id="7B8-sQ-ien"/>
+                    <constraint firstItem="o1f-u7-S8M" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Aol-Ht-LPH"/>
+                    <constraint firstAttribute="trailing" secondItem="o1f-u7-S8M" secondAttribute="trailing" constant="10" id="ElI-pF-gdn"/>
+                    <constraint firstItem="SI3-lM-hCI" firstAttribute="top" secondItem="Qg1-rC-eqm" secondAttribute="top" constant="5" id="HPY-ZV-pG8"/>
+                    <constraint firstItem="Qg1-rC-eqm" firstAttribute="width" secondItem="Fwa-An-UO7" secondAttribute="width" id="K8p-z7-5gX"/>
+                    <constraint firstItem="SI3-lM-hCI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OCu-h5-bf6"/>
+                    <constraint firstItem="Fwa-An-UO7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="W7S-qW-rou"/>
+                    <constraint firstItem="Qg1-rC-eqm" firstAttribute="leading" secondItem="Fwa-An-UO7" secondAttribute="leading" id="Wfa-T7-apg"/>
+                    <constraint firstItem="cde-Sf-PNm" firstAttribute="height" secondItem="Fwa-An-UO7" secondAttribute="height" id="am0-Sh-GKr"/>
+                    <constraint firstItem="SI3-lM-hCI" firstAttribute="leading" secondItem="rKX-AR-yOc" secondAttribute="leading" id="cXc-NY-0y0"/>
+                    <constraint firstItem="cde-Sf-PNm" firstAttribute="leading" secondItem="Fwa-An-UO7" secondAttribute="leading" id="czj-Ce-68J"/>
+                    <constraint firstItem="Qg1-rC-eqm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dFc-z7-r2q"/>
+                    <constraint firstItem="cde-Sf-PNm" firstAttribute="width" secondItem="Fwa-An-UO7" secondAttribute="width" id="hb7-fb-blV"/>
+                    <constraint firstItem="Qg1-rC-eqm" firstAttribute="height" secondItem="Fwa-An-UO7" secondAttribute="height" id="j9S-BW-jAY"/>
+                    <constraint firstItem="SI3-lM-hCI" firstAttribute="leading" secondItem="Qg1-rC-eqm" secondAttribute="trailing" constant="10" id="kSQ-KA-AKK"/>
+                    <constraint firstItem="cde-Sf-PNm" firstAttribute="top" secondItem="Qg1-rC-eqm" secondAttribute="bottom" constant="15" id="nWZ-wE-4qM"/>
+                    <constraint firstItem="EFq-ng-Mgv" firstAttribute="leading" secondItem="SI3-lM-hCI" secondAttribute="leading" id="pgb-xB-06l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonMessage" destination="o1f-u7-S8M" id="xs4-dZ-KYJ"/>
+                <outlet property="lightLabel" destination="EFq-ng-Mgv" id="827-aP-pXK"/>
+                <outlet property="nameDetail" destination="rKX-AR-yOc" id="Eo4-XG-w31"/>
+                <outlet property="studyLabel" destination="SI3-lM-hCI" id="wFO-bt-Jij"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="94"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_advertising-agency-account-executive" width="512" height="512"/>
+        <image name="ic_idea" width="512" height="512"/>
+        <image name="ic_open-book" width="512" height="512"/>
+        <image name="ic_speech-bubble" width="512" height="512"/>
+    </resources>
+</document>

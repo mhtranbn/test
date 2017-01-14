@@ -15,7 +15,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var arrayDetail:[String] = ["Menu","Book Table","Chat"]
     var arrayDescript:[String] = ["Order Items","Make Reservations","Meet others"]
     var arrayType:[String] = ["Items","Tables","Users"]
-    var cellID:[String] = ["HeaderProfileCell"]
+    var cellID:[String] = ["HeaderProfileCell","DetailProfileCell","InforMationCell"]
     @IBOutlet weak var rSlideView: RSlideView!
     var timer: Timer!
     
@@ -34,6 +34,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.rSlideView.setPageControlHidden(true, animated: true)
         self.rSlideView.reloadData()
         self.tableView.register(UINib(nibName:"HeaderProfileCell",bundle:nil), forCellReuseIdentifier: cellID[0])
+        self.tableView.register(UINib(nibName:"DetailProfileCell",bundle:nil), forCellReuseIdentifier: cellID[1])
+        self.tableView.register(UINib(nibName:"InforMationCell",bundle:nil), forCellReuseIdentifier: cellID[2])
     }
     
     func rSlideViewNumberOfPages() -> Int {
@@ -85,25 +87,55 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = Bundle.main.loadNibNamed("HeaderProfileSection", owner: nil, options: nil)?.first as! HeaderProfileSection
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 1 {
+            return 80
+        } else {
+            return 0
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell!
 //        let index = indexPath.row
-        if let dequeCell = self.tableView.dequeueReusableCell(withIdentifier: "HeaderProfileCell") as? HeaderProfileCell {
-            cell = dequeCell
+        let section = indexPath.section
+        if section == 0 {
+            if let dequeCell = self.tableView.dequeueReusableCell(withIdentifier: cellID[1]) as? DetailProfileCell {
+                cell = dequeCell
+            }
+        } else if section == 1 {
+            if let dequeCell = self.tableView.dequeueReusableCell(withIdentifier: cellID[2]) as? InforMationCell {
+                cell = dequeCell
+            }
         }
+        
 
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        let section = indexPath.section
+        var hightRow : CGFloat = 0
+        if section == 0 {
+            hightRow = 100
+        } else if section == 1 {
+            hightRow = 200
+        }
+        
+        return hightRow
     }
     
 
