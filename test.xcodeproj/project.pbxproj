@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		326FD6551E1DFECF00FC54D8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FD6541E1DFECF00FC54D8 /* SwiftyJSON.swift */; };
 		326FD6571E1E005A00FC54D8 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 326FD6561E1E005A00FC54D8 /* data.json */; };
+		329233651E3CBF270027536D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329233641E3CBF270027536D /* Car.swift */; };
+		329233671E3CBF650027536D /* CarViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329233661E3CBF650027536D /* CarViewModal.swift */; };
+		329233691E3CC37C0027536D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329233681E3CC37C0027536D /* TableViewController.swift */; };
 		329A2E8A1E07FBBD00C32115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A2E891E07FBBD00C32115 /* AppDelegate.swift */; };
 		329A2E8C1E07FBBD00C32115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A2E8B1E07FBBD00C32115 /* ViewController.swift */; };
 		329A2E8F1E07FBBD00C32115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329A2E8D1E07FBBD00C32115 /* Main.storyboard */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		326FD6541E1DFECF00FC54D8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		326FD6561E1E005A00FC54D8 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		329233641E3CBF270027536D /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		329233661E3CBF650027536D /* CarViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewModal.swift; sourceTree = "<group>"; };
+		329233681E3CC37C0027536D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		329A2E861E07FBBD00C32115 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329A2E891E07FBBD00C32115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329A2E8B1E07FBBD00C32115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 				329A2E921E07FBBD00C32115 /* LaunchScreen.storyboard */,
 				329A2E951E07FBBD00C32115 /* Info.plist */,
 				326FD6561E1E005A00FC54D8 /* data.json */,
+				329233641E3CBF270027536D /* Car.swift */,
+				329233661E3CBF650027536D /* CarViewModal.swift */,
+				329233681E3CC37C0027536D /* TableViewController.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -220,7 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				326FD6551E1DFECF00FC54D8 /* SwiftyJSON.swift in Sources */,
+				329233691E3CC37C0027536D /* TableViewController.swift in Sources */,
 				329A2E8C1E07FBBD00C32115 /* ViewController.swift in Sources */,
+				329233671E3CBF650027536D /* CarViewModal.swift in Sources */,
+				329233651E3CBF270027536D /* Car.swift in Sources */,
 				329A2E8A1E07FBBD00C32115 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
